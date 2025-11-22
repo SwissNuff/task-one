@@ -12,8 +12,8 @@
 	} from '$lib/assets/componentCodes.js';
 </script>
 
-<section class=" max-w-5xl p-18 m-auto space-y-4">
-	<h1 class="font-bold text-5xl">Form Styling</h1>
+<section class="max-w-5xl sm:p-18 p-2 m-auto space-y-4">
+	<h1 class="font-bold text-2xl sm:text-5xl">Form Styling</h1>
 	<p class="text-gray-500">
 		This exam was built using the <span class="text-gray-900">Svelte framework</span>. I chose
 		Svelte because
