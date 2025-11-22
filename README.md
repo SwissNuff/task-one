@@ -1,9 +1,8 @@
 # About the project
-This project is the round 1 technical test for [Ellty](https://tally.so/r/J9KJQr) 
+This project is the round 1 technical test for [Ellty](https://ellty.notion.site/First-Test-Assignment-6db1cfb744ff4b5fa0b70bd3ccfde442)
 ## Prerequisites
 Before setting up the project, you will need the following:
 - [`git`](https://git-scm.com/)
-- [`make`](https://www.gnu.org/software/make/) | This is **optional**.
 - [`npm`](https://www.npmjs.com/) or any Node.js package manager.
 
 ## Guide
