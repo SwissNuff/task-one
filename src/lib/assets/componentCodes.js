@@ -71,7 +71,8 @@ export let checkBoxCode = `<script lang="ts">
 				stroke-width="2"
 				stroke-linecap="round"
 				stroke-linejoin="round"
-				class="lucide lucide-check-icon lucide-check checkmark"><path d="M20 6 9 17l-5-5" /></svg
+				class="lucide lucide-check-icon lucide-check checkmark">
+				<path d="M20 6 9 17l-5-5" /></svg
 			>
 		</label>
 	</label>
@@ -88,7 +89,8 @@ export let checkBoxCode = `<script lang="ts">
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
-			class="lucide lucide-check-icon lucide-check checkmark"><path d="M20 6 9 17l-5-5" /></svg
+			class="lucide lucide-check-icon lucide-check checkmark">
+			<path d="M20 6 9 17l-5-5" /></svg
 		>
 	</label>
 {/if}
