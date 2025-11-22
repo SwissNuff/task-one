@@ -61,6 +61,14 @@
 	</Container>
 
 	<h2 class="font-bold text-2xl">Checkbox</h2>
+	<p class="text-gray-500">
+		I used a Lucide icon for the checkmark because it closely matches the one in Figma and gives me
+		full control over the SVG’s appearance. When the checkbox has no child props, like <code
+			>{`<Checkbox />`}</code
+		>, it displays its default look. But if child props are provided, such as
+		<code>{`<Checkbox>Task 1</Checkbox>`}</code>, it displays the styled version shown in
+		<code>Checkbox with children values</code>.
+	</p>
 	<Container codeContent={checkBoxCode}>
 		<Checkbox />
 	</Container>
