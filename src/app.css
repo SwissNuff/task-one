@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/montserrat/wght.css';
+
+body {
+	font-family: 'Montserrat Variable', sans-serif;
+	color: #1f2128;
+}

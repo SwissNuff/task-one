@@ -1,0 +1,119 @@
+<script lang="ts">
+	let { children }: { children?: any } = $props();
+</script>
+
+{#if children}
+	<label class="checkbox-container">
+		{@render children?.()}
+
+		<label class="checkbox-wrapper">
+			<input type="checkbox" checked />
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="lucide lucide-check-icon lucide-check checkmark"><path d="M20 6 9 17l-5-5" /></svg
+			>
+		</label>
+	</label>
+{:else}
+	<label class="checkbox-wrapper">
+		<input type="checkbox" checked />
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="lucide lucide-check-icon lucide-check checkmark"><path d="M20 6 9 17l-5-5" /></svg
+		>
+	</label>
+{/if}
+
+<style>
+	.checkbox-container {
+		display: flex;
+		background: white;
+		padding: 8px 15px 8px 22px;
+		justify-content: space-between;
+		width: 370px;
+		height: 42px;
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		color: white;
+		background-color: white;
+		border-radius: 6px;
+		border: 1px solid #cdcdcd;
+	}
+
+	.checkbox-container:hover input ~ .checkmark {
+		border: 1px solid #bdbdbd;
+		color: #e3e3e3;
+	}
+
+	.checkbox-wrapper {
+		display: block;
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	.checkbox-wrapper input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	.checkbox-wrapper input:active ~ .checkmark {
+		outline-offset: 2px;
+		box-shadow: 0 0 0 3px #246af62b;
+		border: 1px solid #bdbdbd;
+	}
+
+	.checkbox-wrapper input:checked ~ .checkmark {
+		background-color: #2469f6;
+		border-color: #2469f6;
+		color: white;
+	}
+
+	.checkbox-wrapper input:checked ~ .checkmark:hover {
+		background-color: #5087f8;
+		border-color: #5087f8;
+		color: white;
+	}
+
+	.checkbox-wrapper input:checked:active ~ .checkmark {
+		box-shadow: 0 0 0 3px #246af62b;
+	}
+
+	.checkbox-wrapper input:disabled ~ .checkmark {
+		background-color: #f5f5f5;
+		border-color: #e0e0e0;
+		cursor: not-allowed;
+		opacity: 0.6;
+	}
+
+	.checkbox-wrapper input:disabled {
+		cursor: not-allowed;
+	}
+</style>
