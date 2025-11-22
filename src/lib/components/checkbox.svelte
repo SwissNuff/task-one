@@ -46,8 +46,9 @@
 		background: white;
 		padding: 8px 15px 8px 22px;
 		justify-content: space-between;
-		width: 370px;
+		max-width: 370px;
 		height: 42px;
+		flex-grow: 1;
 	}
 
 	.checkmark {

@@ -14,6 +14,6 @@
 		border: 1px solid #eeeeee;
 		border-radius: 6px;
 		padding: 10px 0;
-		width: fit-content;
+		max-width: 370px;
 	}
 </style>
