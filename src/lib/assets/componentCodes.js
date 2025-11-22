@@ -46,7 +46,7 @@ export let formCode = `<script>
 		border: 1px solid #eeeeee;
 		border-radius: 6px;
 		padding: 10px 0;
-		width: fit-content;
+		max-width: 370px;
 	}
 </style>
 `;
@@ -99,8 +99,9 @@ export let checkBoxCode = `<script lang="ts">
 		background: white;
 		padding: 8px 15px 8px 22px;
 		justify-content: space-between;
-		width: 370px;
+		max-width: 370px;
 		height: 42px;
+		flex-grow: 1;
 	}
 
 	.checkmark {
